@@ -1,0 +1,124 @@
+EXERCISE 1
+------------------------------------------------------------------------
+test in  main, all functions is in "Linkedlist2.c"
+Will not print out anyting unless something is wrong.
+------------------------------------------------------------------------
+EXERCISE 2
+------------------------------------------------------------------------
+test in main, all functions is in "linkedlist2.c"
+Will print out underflow error when the POP function
+is called on an empty list. otherwise it will not print
+anything unless something is wrong. 
+------------------------------------------------------------------------
+EXERCISE 3
+------------------------------------------------------------------------
+test in main, all functions is in "stack.c"
+Will print out underflow error when the POP function
+is called on an empty array. will also print out 
+overflow error when trying to call PUSH function on a
+full array. otherwise it will not print anything 
+unless something is wrong.
+-------------------------------------------------------------------------
+EXERCISE 4
+-------------------------------------------------------------------------
+test in main, all functions is in "Linkedlist2.c"
+Will print out underflow error when the DEQUEUE function
+is called on an empty list. otherwise it will not print
+anything unless something is wrong.
+-------------------------------------------------------------------------
+EXERCISE 5
+-------------------------------------------------------------------------
+test in main, all functions is in "queue.c"
+Will print out underflow error when the DEQUEUE function
+is called on an empty array. will also print out 
+overflow error when trying to call ENQUEUE function on a
+full array. otherwise it will not print anything 
+unless something is wrong.
+--------------------------------------------------------------------------
+EXERCISE 6
+--------------------------------------------------------------------------
+The arrays can be extended by reallocating memory.
+using realloc when the arrays are full. When doing
+this you allocate memory for a new array for example
+twice the size of the original and move all existing 
+elements in the original to the new one.
+
+running time is linear to the amount of elements.
+---------------------------------------------------------------------------
+EXERCISE 7
+---------------------------------------------------------------------------
+In an array you allocate a fixed amount of memory and
+every element have to be after one another in the allocated
+memory chunk.
+
+In a Linked list the elements do not have to be stored
+next to each other. every time you add a element you
+allocate just enough memory for one element and connect
+it to the list using pointers.
+
+Linked list is better when the memory needed becomes very
+lagre and also when you don't know how many elements there
+is going to be inserted.
+
+arrays are better when you know how many elements will
+be added.
+-----------------------------------------------------------------------------
+EXERCISE 8
+-----------------------------------------------------------------------------
+You can illustare a stack with two queues like this:
+
+you start with one queue like this <4,3,2,1> (Q1)
+and one empty queue (Q2). you then start to DEQUEUE from
+Q1 and ENQUEUE into Q2. after you have DEQUEUEd three times
+your two queues will look like this:
+Q1 < , , ,4>
+Q2 < ,3,2,1>
+Then you DEQUEUE from Q1 and the LIFO policy is fullfilled.
+if you want to continue after that you DEQUEUE Q2 twice  and ENQUEUE
+into Q1 and then DEQUEUE Q2 one last time without ENQUEUE it into Q1.
+
+running time is linear to the amount of elements.
+-----------------------------------------------------------------------------
+EXERCISE 9
+-----------------------------------------------------------------------------
+You can illustrate a queue with two stacks like this:
+
+you start to push elements into one stack like this <4,3,2,1> (S1)
+and one empty stack (S2). you then start to POP from S1 and PUSH into S2.
+after three POP calls the stacks will look like this:
+S1 < , , ,1>
+S2 < ,2,3,4>
+Then you POP from S1 and the FIFO policy is fullfilled. if you want to 
+continue after that you POP twice from S2 and PUSH the elements into S1 
+then POP the remaining element from S2.
+------------------------------------------------------------------------------
+EXERCISE 10
+------------------------------------------------------------------------------
+STACKUNION_LISTS(S1, S2)
+add S1 and S2 to S
+SORT(S)
+for each element in S do
+	if S.element.key == S.element.next.key
+		DELETE(S.element)
+return S
+
+
+STACKUNION_ARRAY(A1, A2)
+add A1 and A2 to A
+SORT(A)
+for each A.size - 1
+		if A[i] == A[i + 1]
+			DELETE(A)
+		i = i + 1
+return A
+------------------------------------------------------------------------------
+EXERCISE 11
+------------------------------------------------------------------------------
+test in main, functions for linked list is in "Linkedlist2.c"
+will print out sequence of number before and after the nPOW2 function.
+runtime for lists: n
+
+functions for arrays is in "stack.c" and will also print out 
+sequence of numbers before and after the nPOW2 function.
+runtime for array: N^2
+------------------------------------------------------------------------------

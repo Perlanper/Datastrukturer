@@ -1,0 +1,41 @@
+EXERCISE 1
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+tests in main, functions in "graph2.c" several tests to know if the graph works as intended.
+will not print out anything unless something is wrong.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+EXERCISE 2
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+tests in main, functions in "graph.c". creates three graphs with no edges and run it throuh
+CREATE_RANDOM_UNEDGE function with different values to sparsity. will not print out anything
+unless something is wrong.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+EXERCISE 3
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Since we put labels on every node for "unvisited"(white), "visited" (gray) and "finnished"(black).
+DFS can easily find cycles in the graph since it runs depth first. if it just follows the graph and
+comes to a already visited node or a gray node it have found a cycle.
+
+Example: node1->node2->node3->node1  arrows represent connections
+
+all nodes are unvisited(white) in the beginning. then it starts at node1 and makes it gray.
+DFS then follows the conections until there is not conncetions left to follow and then backtracks
+to a gray node that still have white nodes connected. in this example it will start at node1 and label it gray
+then move to node 2 and gray that one and onwards to node3 and gray that one. then DFS checks it node3 has any white
+nodes but it does not but discovers that it have a gray node connected and that means that there exist a cycle.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+EXERCISE 4
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+tests in main, functions in "graph.c". creates a graph as picture in lab question and runs DFS
+on it. will print ot discovery time and finninshing time for every node in the graph.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+EXERCISE 5
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+tests in main, functions in "graph.c" and "Dijkstra.c". creates a graph with 100 nodes.
+then creates connections between nodes and run random weight on every edge. after that all
+connections on the black cells are removed to match the graph in the question. Lastly
+runs graph throuh Dijkstras Algorithm to find shortest path between two nodes.
+
+have two examples: one from (1,1) to (6,4) and one from (1,1) to (10,3).
+
+will print out throuh which nodes you need to go for the shortest path.

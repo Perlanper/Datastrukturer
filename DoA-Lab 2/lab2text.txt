@@ -1,0 +1,71 @@
+EXERCISE 1
+-------------------------------------------------------------------------------------------------
+test in main, all functions in "SortingAlgo.c"
+outputs sequence of numbers before and after
+the Insertion sort algorithm (Lists).
+-------------------------------------------------------------------------------------------------
+EXERCISE 2
+-------------------------------------------------------------------------------------------------
+test in main, all functions in "SortingAlgo.c"
+outputs sequence of numbers before and after
+the Insertion sort algorithm (arrays).
+-------------------------------------------------------------------------------------------------
+EXERCISE 3
+-------------------------------------------------------------------------------------------------
+it was much easier to make insertionsort for arrays because you could simply
+follow the pseudeo code and make it work. it was a bit harder with linked list
+because you had to rethink alot from the pseudeo code to make it work.
+
+with linked list you have easy dynamic memory allocation and inserting/deleting elements
+is very easy. linked list takes up alot of memory because of all the pointers to the elements.
+
+with arrays you can easily find elements without looping through the entire array as you have
+to do in linked list. problem with array is that you have a fixed amount of memory and can be
+hard to insert more elements when the array is full and start to become very lagre.
+
+arrays should be used in small programs where you know how much memory you will need.
+linked lists should be used in larger programs where you don't know how much memory you need
+or you don't know how many elements there is going to be.
+------------------------------------------------------------------------------------------------
+EXERCISE 4
+------------------------------------------------------------------------------------------------
+when you are merging array A and B into a sorted array C. the elements in array C are always
+smaller than the smallest elements in array A and B.
+------------------------------------------------------------------------------------------------
+EXERCISE 5
+------------------------------------------------------------------------------------------------
+test in main, all functions in "SortingAlgo.c"
+outputs sequence of numbers before and after
+the mergesort algorithm.
+------------------------------------------------------------------------------------------------
+EXERCISE 6
+------------------------------------------------------------------------------------------------
+picture in zip file with illustration.
+
+after partition is done it returns i+1 which is put into q.
+the quicksort algorithm is then called again with q as a divider och the array.
+then the partition called again but on two smaller arrays.
+------------------------------------------------------------------------------------------------
+EXERCISE 7
+------------------------------------------------------------------------------------------------
+test in main, all functions in "SortingAlgo.c"
+outputs sequence of numbers before and after
+the Quick sort algorithm.
+------------------------------------------------------------------------------------------------
+EXERCISE 8
+------------------------------------------------------------------------------------------------
+with a array sorted in an ascending order, the best alogrithm to use would be Insertion sort
+since it's the best case for that algorithm and will run in O(n)
+
+an array in decending order, either merge sort or quick sort they both would run in
+O(n*log(n))
+
+if all elements in the array are the same insertions sort would be the best and run in
+O(n)
+
+when you don't know nothing about the elements in the array the best algorithm to use is
+merge sort since it always runs in O(n*log(n)).
+-------------------------------------------------------------------------------------------------
+
+
+
